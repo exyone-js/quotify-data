@@ -1,12 +1,12 @@
-# epigram-data · 隽语数据集
+# quotify-data · 引语数据集
 
-这是 **epigram（隽语）** API 的数据仓库。Worker 通过**来源清单**动态加载这里的数据集文件，
+这是 **quotify（引语）** API 的数据仓库。Worker 通过**来源清单**动态加载这里的数据集文件，
 因此**修改本仓库不需要改动或重新部署 Worker**。
 
 ## 目录结构
 
 ```text
-epigram-data/
+quotify-data/
 ├── sources.json          # 来源清单：列出全部数据集文件的地址（Worker 据此加载）
 └── data/
     ├── internet.json     # 网络
@@ -61,8 +61,8 @@ epigram-data/
 
 ```json
 [
-  "https://raw.githubusercontent.com/exyone-js/epigram-data/main/data/internet.json",
-  "https://raw.githubusercontent.com/exyone-js/epigram-data/main/data/literature.json"
+  "https://raw.githubusercontent.com/exyone-js/quotify-data/main/data/internet.json",
+  "https://raw.githubusercontent.com/exyone-js/quotify-data/main/data/literature.json"
 ]
 ```
 
